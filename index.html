@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#07131F">
-<title>Invested · My Progress</title>
+<title>Invested</title>
 <style>
 :root{--bg:#f3f0e9;--card:#fffdf9;--text:#11110f;--muted:#625f58;--line:#ddd7cc;--accent:#7468d8;--blue:#c9c5ff;--yellow:#edd8a6;--green:#b9dcc2;--danger:#efc1bd;--shadow:0 18px 46px rgba(45,38,28,.08)}
 *{box-sizing:border-box}html,body{margin:0;min-height:100%;color-scheme:only light;background:linear-gradient(180deg,#fbfaf7 0%,#f5f2ec 52%,#efebe3 100%);color:#11110f;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input,select{font:inherit;color:var(--text)}button{cursor:pointer}.app{width:100%;max-width:none;margin:0;padding:18px 16px 116px}.view{display:none}.view.active{display:block}.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;padding:0 2px}.brand{font-size:30px;font-weight:700;letter-spacing:-.04em;font-family:Georgia,"Times New Roman",serif}.gear{width:44px;height:44px;border:1px solid #d8d1c6;border-radius:15px;background:#fffdf9;font-size:18px;box-shadow:0 8px 22px rgba(45,38,28,.05)}.eyebrow{margin:0 0 5px;color:var(--muted);font-size:11px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}h1{margin:0 0 8px;font-size:30px;line-height:1.05;letter-spacing:-.045em}h2{margin:0;font-size:18px}.sub{margin:0;color:var(--muted);font-size:14px;line-height:1.45}.panel{margin-top:14px;background:rgba(255,253,249,.97);border:1px solid #ddd6ca;border-radius:26px;padding:18px;box-shadow:0 18px 44px rgba(48,41,31,.065)}.panel-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:13px}.btn,input,select{min-height:48px;border:1px solid var(--line);border-radius:14px}.btn{padding:0 14px;background:#fffdf9;font-weight:850}.primary{background:#d9d4ff;border-color:#c5bee9;color:#11110f;box-shadow:0 8px 20px rgba(100,87,180,.12)}.form{display:grid;gap:9px}.form input,.form select{width:100%;padding:0 12px;background:#fffdf9;border-color:#d8d1c6;font-size:16px}.formrow{display:grid;grid-template-columns:1fr 116px;gap:9px}.colors{display:flex;gap:8px;flex-wrap:wrap}.color{width:30px;height:30px;min-height:30px;border-radius:50%;padding:0;border:3px solid #fff;background:var(--c);box-shadow:0 0 0 1px #cfd4df}.color.on{box-shadow:0 0 0 3px #111318}.empty{padding:16px 3px;color:var(--muted);font-size:14px}.goals{display:grid;gap:11px}.goal{border:1px solid #ded7cc;border-radius:21px;padding:15px;display:grid;gap:10px;background:#fffdf9;box-shadow:0 8px 22px rgba(45,38,28,.035)}.goal-top{display:flex;justify-content:space-between;gap:10px}.goal-name{font-size:17px;font-weight:900}.goal-time{font-size:13px;color:var(--muted);margin-top:2px}.track{height:7px;border-radius:999px;background:#ece7df;overflow:hidden}.fill{height:100%;border-radius:inherit;background:var(--goal)}.meta{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;color:var(--muted);font-size:12px}.goal-actions{display:grid;grid-template-columns:1fr auto;gap:8px}.focus-goal{min-height:46px;border:0;border-radius:14px;background:color-mix(in srgb,var(--goal) 22%,white);font-weight:900}.menu-wrap{position:relative}.dots{width:46px;height:46px;border:1px solid var(--line);border-radius:14px;background:#fff;font-weight:900}.menu{display:none;position:absolute;right:0;top:52px;width:178px;padding:6px;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 18px 40px #0002;z-index:15}.menu.show{display:grid}.menu button{min-height:42px;border:0;border-radius:10px;background:#fff;text-align:left;padding:0 10px;font-weight:750}.menu button:active{background:#f3f5f9}.mode{display:grid;grid-template-columns:1fr 1fr;gap:5px;padding:5px;border-radius:17px;background:#ede8df;border:1px solid #ddd5c9}.mode button{min-height:42px;border:0;border-radius:12px;background:transparent;font-weight:850}.mode button.on{background:#fffdf9;color:#11110f;box-shadow:0 5px 16px rgba(44,37,26,.07)}.focus-head{text-align:center;display:grid;gap:4px;padding:9px 0}.focus-head strong{font-size:24px;font-family:Georgia,"Times New Roman",serif;font-weight:700;letter-spacing:-.03em}.focus-head span{font-size:13px;color:var(--muted)}.countdown{text-align:center;min-height:52px;font-size:37px;font-weight:850;letter-spacing:-.045em;font-variant-numeric:tabular-nums}.countdown small{display:block;font-size:11px;color:var(--muted);letter-spacing:0}.dialrow{display:grid;grid-template-columns:52px 1fr 52px;gap:8px;align-items:center}.adjust{width:52px;height:52px;border:1px solid #d8d1c6;border-radius:50%;background:#fffdf9;font-weight:900;box-shadow:0 8px 20px rgba(43,37,28,.045)}.dial{touch-action:none!important;overscroll-behavior:contain;grid-column:2;width:100%;min-width:0;aspect-ratio:1;border-radius:50%;position:relative;display:grid;place-items:center;touch-action:none;user-select:none;background:#fbf8f2;box-shadow:0 22px 52px rgba(43,36,26,.08),inset 0 0 0 1px rgba(158,148,132,.45);overflow:hidden}.dial svg{position:absolute;inset:0;width:100%;height:100%}.lap-ring circle,.lap-ring path{fill:none;shape-rendering:geometricPrecision}.lap-ring{overflow:hidden}
@@ -3877,6 +3877,191 @@ body[data-theme="ink"] .level-dot.filled:last-child{
   }
 }
 
+
+/* ==========================================================
+   v47 — PERSONAL TEST BUILD
+   - no top "Invested" brand
+   - compact Focus layout for phone
+   - everything unlocked/free for testing
+   ========================================================== */
+
+/* Personal test: no premium/locked visual language anywhere. */
+.theme-badge,
+.pro-pill,
+.limit-chip,
+#settingsPremium,
+.premium-card .early-price,
+.premium-card .premium-price,
+.premium-card .no-sub,
+.premium-card .premium-note{
+  display:none!important;
+}
+.theme-option.locked{
+  opacity:1!important;
+}
+.theme-option.locked::after{
+  display:none!important;
+  content:none!important;
+}
+.premium-insight.locked .premium-insight-grid{
+  filter:none!important;
+  opacity:1!important;
+  pointer-events:auto!important;
+  user-select:auto!important;
+}
+
+/* Remove the redundant top brand but keep Settings reachable. */
+.top{
+  height:0!important;
+  min-height:0!important;
+  margin:0!important;
+  padding:0!important;
+  position:relative!important;
+  z-index:30!important;
+}
+.top .brand{
+  display:none!important;
+}
+.top .gear{
+  position:absolute!important;
+  right:0!important;
+  top:0!important;
+  width:44px!important;
+  height:44px!important;
+  min-height:44px!important;
+  z-index:31!important;
+}
+
+/* A little more room for content on small phones. */
+.app{
+  padding-top:12px!important;
+  padding-bottom:94px!important;
+}
+#focusView > .eyebrow.setup{
+  display:none!important;
+}
+#focusView > h1.setup{
+  margin:5px 54px 9px 0!important;
+  font-size:32px!important;
+  line-height:1.05!important;
+}
+#focusView > .panel{
+  padding:10px 10px 13px!important;
+  border-radius:20px!important;
+}
+
+/* Compact the setup area without making controls fiddly. */
+#focusView .setup select{
+  min-height:44px!important;
+  height:44px!important;
+  padding-top:6px!important;
+  padding-bottom:6px!important;
+}
+#focusView .mode{
+  margin-top:6px!important;
+  padding:4px!important;
+}
+#focusView .mode button{
+  min-height:38px!important;
+}
+#focusView .focus-head{
+  gap:2px!important;
+  padding:6px 0 3px!important;
+}
+#focusView .focus-head strong{
+  font-size:20px!important;
+}
+#focusView .focus-head span{
+  font-size:11px!important;
+}
+body[data-theme="ink"] #focusView .focus-level{
+  width:min(96%,350px)!important;
+  gap:4px!important;
+  margin:1px auto 5px!important;
+}
+body[data-theme="ink"] #focusView .focus-level-top b,
+body[data-theme="ink"] #focusView .focus-level-top span{
+  font-size:10px!important;
+}
+body[data-theme="ink"] #focusView .level-dots{
+  gap:5px!important;
+  padding:2px 0 0!important;
+}
+body[data-theme="ink"] #focusView .level-dot{
+  max-width:12px!important;
+  min-width:8px!important;
+}
+
+/* Smaller signature dial so Start/Save remain visible without scrolling. */
+body[data-theme="ink"] #focusView .dialrow{
+  grid-template-columns:42px minmax(0,1fr) 42px!important;
+  gap:4px!important;
+  margin-top:0!important;
+}
+body[data-theme="ink"] #focusView .adjust{
+  width:42px!important;
+  height:42px!important;
+  min-height:42px!important;
+  padding:0!important;
+}
+body[data-theme="ink"] #focusView .dial{
+  width:min(62vw,260px)!important;
+  min-width:0!important;
+  max-width:260px!important;
+}
+body[data-theme="ink"] #focusView .dialtime{
+  font-size:clamp(29px,9.5vw,42px)!important;
+  padding:9px 12px 8px!important;
+}
+#focusView .hint{
+  display:none!important;
+}
+#focusView .actions{
+  margin-top:7px!important;
+  gap:7px!important;
+}
+#focusView .actions button{
+  min-height:48px!important;
+}
+
+/* Keep navigation compact and above phone safe area. */
+.nav{
+  min-height:66px!important;
+}
+.nav button{
+  min-height:58px!important;
+}
+
+@media(max-width:430px){
+  .app{
+    padding-left:12px!important;
+    padding-right:12px!important;
+  }
+  #focusView > .panel{
+    padding:9px!important;
+  }
+  body[data-theme="ink"] #focusView .dial{
+    width:min(60vw,245px)!important;
+    max-width:245px!important;
+    min-width:0!important;
+  }
+  body[data-theme="ink"] #focusView .dialrow{
+    grid-template-columns:40px minmax(0,1fr) 40px!important;
+    gap:3px!important;
+  }
+  body[data-theme="ink"] #focusView .adjust{
+    width:40px!important;
+    height:40px!important;
+    min-height:40px!important;
+  }
+  #focusView .focus-head strong{
+    font-size:19px!important;
+  }
+  body[data-theme="ink"] #focusView .level-dot{
+    max-width:11px!important;
+  }
+}
+
 </style>
 
 <link rel="manifest" href="data:application/manifest+json,%7B%22name%22%3A%22Invested%22%2C%22short_name%22%3A%22Invested%22%2C%22start_url%22%3A%22.%2F%22%2C%22scope%22%3A%22.%2F%22%2C%22display%22%3A%22standalone%22%2C%22background_color%22%3A%22%2307131F%22%2C%22theme_color%22%3A%22%2307131F%22%2C%22description%22%3A%22See%20what%20your%20life%20hours%20are%20building.%22%2C%22icons%22%3A%5B%7B%22src%22%3A%22icon-192.png%22%2C%22sizes%22%3A%22192x192%22%2C%22type%22%3A%22image%2Fpng%22%7D%2C%7B%22src%22%3A%22icon-512.png%22%2C%22sizes%22%3A%22512x512%22%2C%22type%22%3A%22image%2Fpng%22%7D%5D%7D">
@@ -4699,8 +4884,8 @@ const THEME_LIBRARY=[
  {id:"game",name:"Game Sunset",desc:"Violet game UI",sw:["#5541b7", "#294eaa", "#9e37ef", "#18bfc4"],chrome:"#5541b7",free:false,aa:true},
 ];
 
-const FREE_GOAL_LIMIT=2;
-function hasPremium(){return !!state.premium}
+const FREE_GOAL_LIMIT=9999;
+function hasPremium(){return true}
 function activeGoalCount(){return state.goals.filter(g=>!g.archived).length}
 function premiumBenefits(){
   return `<div class="premium-list">
